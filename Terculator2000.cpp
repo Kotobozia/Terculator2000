@@ -66,7 +66,7 @@ int main()
                 }
             }
         }
-        // cout
+        // cout GL
         cout << "Hacking Pentagon computers to calculate... The answer is | " << c << " |" << endl;
         cout << endl;
     }
