@@ -6,6 +6,7 @@ int main()
     // enter
     double a, b, c;
     string calc = "*";
+    string ex = "O";
     //if no exit, work
     while (calc != "x")
     {
@@ -16,7 +17,6 @@ int main()
         if (calc == "x")
         { //if wished to exit
             cout << "Do You wish to exit? Y/N" << endl;
-            string ex;
             cin >> ex;
             if (ex == "Y")
             {
