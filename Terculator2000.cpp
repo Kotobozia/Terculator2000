@@ -1,6 +1,41 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+double calculation (double &a, string &calc, double &b, double &c)
+{
+// +
+        if (calc == "+")
+            {
+                c = a + b;
+            }
+        else
+            {
+// -
+            if (calc == "-")
+            {
+                c = a - b;
+            }
+            else
+                {
+// *
+                if (calc == "*")
+                    {
+                        c = a * b;
+                    }
+                    else
+                        {
+// /
+                        if (calc == "/")
+                            {
+                                c = a / b;
+                            }
+                        }
+                }
+            }
+    return c;
+}
+
 int main()
 {
     // enter
@@ -9,14 +44,15 @@ int main()
     string ex = "O";
     //if no exit, work
     
-    while ((calc != "x") && (ex != "Y"))
+    while (ex != "Y")
     {
         cout << "Enter A" << endl;
         cin >> a;
         cout << "Enter action" << endl;
         cin >> calc;
-        if (calc == "x")
-        { //if wished to exit
+        
+        while (calc == "x")
+        {                                   //if wished to exit
             cout << "Do You wish to exit? Y/N" << endl;
             cin >> ex;
             if (ex == "Y")
@@ -26,7 +62,7 @@ int main()
             else
             {
                 if (ex == "N")
-                { // if changed mind
+                {                           // if changed mind
                     cout << endl;
                     cout << "Enter the task again. Reenter A." << endl;
                     cout << "Enter A" << endl;
@@ -38,36 +74,12 @@ int main()
         }
         cout << "Enter B" << endl;
         cin >> b;
-        // +
-        if (calc == "+")
-            {
-                c = a + b;
-            }
-        else
-            {
-            // -
-            if (calc == "-")
-            {
-                c = a - b;
-                }
-                else
-                {
-                // *
-                    if (calc == "*")
-                    {
-                        c = a * b;
-                    }
-                        else
-                        {
-                    // /
-                            if (calc == "/")
-                            {
-                            c = a / b;
-                            }
-                        }
-                }
-        }
-    // cout
+
+// call for calculation func
+
+        calculation(a, calc, b, c);
+
+/// cout
     cout << "Hacking Pentagon computers to calculate... The answer is | " << c << " |" << endl;
     cout << endl;
     }
