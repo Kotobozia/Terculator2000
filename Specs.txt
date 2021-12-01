@@ -1,0 +1,9 @@
+1.1. QA check -> bug removed
+
+
+to add
+...
+...
+- more decentralized functions
+- same reaction to Y/y, N/n
+- add help commands, author, etc
