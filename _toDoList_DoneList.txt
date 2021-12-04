@@ -1,9 +1,12 @@
 1.1. QA check -> bug removed
-
+1.2. same reaction to Y/y, N/n
+1.3. output changed; a, calc and b are cout-ed
+     function decentralization, output
 
 to add
+
 ...
 ...
 - more decentralized functions
-- same reaction to Y/y, N/n
+
 - add help commands, author, etc
