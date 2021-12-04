@@ -55,13 +55,13 @@ int main()
         {                                   //if wished to exit
             cout << "Do You wish to exit? Y/N" << endl;
             cin >> ex;
-            if (ex == "Y")
+            if ((ex == "Y") || (ex == "y"))
             {
                 return 0;
             }
             else
             {
-                if (ex == "N")
+                if ((ex == "N") || (ex == "n"))
                 {                           // if changed mind
                     cout << endl;
                     cout << "Enter the task again. Reenter A." << endl;
