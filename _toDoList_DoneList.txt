@@ -9,3 +9,4 @@ to add
 ...
 - more decentralized functions
 - add help commands, author, etc
+- enter full equations 
