@@ -1,39 +1,27 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
+using System;
+namespace stdDotnetBot;
 
 double calculation (double a, string calc, double b, double &c)          // calculation function
 {
-// +
-        if (calc == "+")
-            {
-                c = a + b;
-            }
-        else
-            {
-// -
-            if (calc == "-")
-            {
-                c = a - b;
-            }
-            else
-                {
-// *
-                if (calc == "*")
-                    {
-                        c = a * b;
-                    }
-                    else
-                        {
-// /
-                        if (calc == "/")
-                            {
-                                c = a / b;
-                            }
-                        }
-                }
-            }
+    switch (calc)
+    {
+/// +
+        case "+":
+            c = a + b;
+            break;
+/// -
+        case "-":
+            c = a - b;
+            break;
+ /// *
+        case "*":
+            c = a * b;
+            break;
+/// /
+        case "/":
+            c = a / b;
+            break;
+    }
     return c;
 }
 
